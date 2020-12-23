@@ -12,7 +12,7 @@ public class CreateAccount {
 
         WebDriver webDriver = new FirefoxDriver();
 
-        webDriver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+        webDriver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
         webDriver.manage().window().maximize();
 
         webDriver.get("https://en.wikipedia.org/w/index.php?title=Special:CreateAccount&returnto=Wikipedia");
