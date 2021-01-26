@@ -20,7 +20,8 @@ public class GrasserRegistration {
         webDriver.manage().window().maximize();
 
         webDriver.get("https://grasser.ru/auth/?register=yes");
-        webDriver.findElement(By.xpath("//*[@id='processing']")).click();
+        webDriver.findElement(By.xpath("/html/body/div[3]/header/div[3]/div/div[3]/div/div[2]/div/a")).click();
+        webDriver.findElement(By.xpath("/html/body/div[3]/div[2]/div[1]/h1"));
 
         Date dateNow = new Date();
         SimpleDateFormat timeFormat = new SimpleDateFormat("y-MM-dd hh-mm-ss");
@@ -32,6 +33,6 @@ public class GrasserRegistration {
             e.printStackTrace();
         }
 
-        webDriver.quit();
+
     }
 }
